@@ -1,43 +1,43 @@
 {
   "basics": {
-    "name": "Molly Maluhia",
+    "name": "Joshua Galeria",
     "label": "Student",
-    "picture": "https://github.com/kambergjohnson.png",
-    "email": "molly@hawaii.edu",
-    "phone": "808-333-4444",
-    "website": "https://mmaluhia.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2024.",
-    "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "picture": "https://github.com/jgaleria.png",
+    "email": "jgaleria@hawaii.edu",
+    "phone": "808-725-7622",
+    "website": "https://jgaleria.github.io",
+    "summary": "I am studying for a B.S. in Computer Engineering in the Department of Electrical and Computer Engineering at the University of Hawaii. I expect to graduate in Spring, 2024.",
+    "location": { "address": "", "postalCode": "96797", "city": "Waipahu", "countryCode": "USA", "region": "Hawaii" },
     "profiles": [
-      { "network": "github", "username": "mmaluhia", "url": "http://github.com/changeme" },
-      { "network": "linkedin", "username": "mollymaluhia", "url": "http://linkedin.com/in/changeme" },
+      { "network": "github", "username": "jgaleria", "url": "http://github.com/jgaleria" },
+      { "network": "linkedin", "username": "joshua-galeria", "url": "http://linkedin.com/in/joshua-galeria" },
       { "network": "twitter", "username": "mollymal", "url": "http://twitter.com/changeme" },
       { "network": "instagram", "username": "molly", "url": "http://instagram.com/changeme" }
     ]
   },
   "interests": [
-    { "name": "Interactive media" },
-    { "name": "Neuromorphic Computing" },
-    { "name": "Quantum Computing" },
+    { "name": "Software Engineering" },
     { "name": "Robotics" },
-    { "name": "3D Graphics" }
+    { "name": "Computer Vision" },
+    { "name": "Machine Learning" },
+
   ],
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "Javascript", "Assembly", "Common Lisp" ]
+      "keywords": [ "Python", "Javascript", "React", "SQL" ]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub", "g++", "TI LaunchPad" ]
+      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub", "Docker" ]
     }
   ],
   "education": [
     {
       "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2018)",
+      "area": "Computer Engineering (expected Spring, 2024)",
       "studyType": "B.S.",
-      "startDate": "2013-09-01",
+      "startDate": "2020-08-21",
       "endDate": "Present",
       "courses": [
       ]
