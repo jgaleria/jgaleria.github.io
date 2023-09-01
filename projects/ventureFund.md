@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/ventureCapital.jpg
+image: img/ventureCapital.jpeg
 title: "Calvin Shindo Student Venture Fund"
 date: 2023
 published: true
