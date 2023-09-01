@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/animal_farm_full.jpg
 title: "Animal Farm"
-date: 2022
+date: 2021
 published: true
 labels:
   - C
