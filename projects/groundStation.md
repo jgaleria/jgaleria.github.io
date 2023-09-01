@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/cotton/cotton-square.png
+image: img/rose-square.png
 title: "Ground Station"
 date: 2022
 published: true
