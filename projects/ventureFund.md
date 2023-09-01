@@ -11,7 +11,7 @@ labels:
 summary: "Student led venture fund making investments in UH affiliated startups and encouraging entrepreneurship within the student community"
 ---
 
-<img class="img-fluid" src="../img/CSSVF.jpg">
+<img class="img-fluid" src="../img/CSSVF.png">
 
 The goal of the Calvin Shindo Student Venture Fund is 1) to enrich student learning by providing a hands-on opportunity to learn the venture capital process and, 2) to nurture high potential, early-stage ventures. Student leaders learn how to make scrupulous investment decisions, negotiate, and structure transactions, all closely mimicking the real world. In addition to providing a unique educational opportunity, the Fund encourages UH entrepreneurs to give their companies a go by providing strong access to seed capital. A Fund Board made up of experienced investors oversees the investment process conducted by the student leaders.                                                                                                      
 
