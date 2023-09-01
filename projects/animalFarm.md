@@ -12,7 +12,7 @@ labels:
 summary: "Web interface to communicate with and control a mini production Mars rover."
 ---
 
-<img class="img-fluid" src="../img/rose-square.png">
+<img class="img-fluid" src="../img/animal_farm_full.jpg">
 
 Animal Farm is a series of labs intended to teach the basics of C and C++. It's also intended to introduce good Software Engineering practices. Students are expected to "Live" in this project as the code evolves over a series of requirements.
 
