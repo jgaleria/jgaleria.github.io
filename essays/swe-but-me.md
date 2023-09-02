@@ -9,7 +9,7 @@ labels:
   - Robotics
 ---
 
-<img width="200px" class="rounded float-start pe-4" src="../img/softwareEngineering.jpeg>
+<img width="200px" class="rounded float-start pe-4" src="../img/softwareEngineering.jpeg">
 
 
 ## Full Stack Development
