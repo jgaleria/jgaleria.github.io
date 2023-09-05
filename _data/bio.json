@@ -51,7 +51,10 @@
       "endDate": "2023-08-10",
       "summary": "Robotic Hand-Eye Calibration to automate new methods of make (3D printing and cutting) for shoes",
       "highlights": [
-        ""
+        "Researched eye-in-hand and eye-to-hand robotic calibration techniques to generate robot coordinate reference frame", 
+        "Incorporated Pylon camera software with Python to automate image capture and save for post processing",
+        "Created agnostic robotic cell configuration including global camera, extruder, Aruco tag, and robot arm",
+        "Scaling automated calibration process and robotic cell to manufacturing line helps Nike move to zero waste"
       ]
     },
     {
@@ -62,7 +65,10 @@
       "endDate": "2023-05-15",
       "summary": "Developing interface and controls for a mini-production MARS rover - Guidance, Navigation & Control Subsystem",
       "highlights": [
-        ""
+        "Collaborated with 4 multidisciplinary subsystems for seamless rover integration through Agile development",
+        "Led web interface development using Robotic Operating System and ReactJS that handles rover navigation and controls",
+        "Implemented ROS packages in Ubuntu Linux environment to allow data transfer and point to point communication",
+        "Built ReactJS components displaying 4 camera feeds and controlling 6 motors in real time"
       ]
     },
     {
@@ -73,7 +79,10 @@
       "endDate": "2022-08-8",
       "summary": "KnightLight Flask - REST API that automates penetration testing for Center of Medicare and Medicaid software applications",
       "highlights": [
-        ""
+        "Developed in Agile and trained using GitLab pipelines continuous integration and continuous development",
+        "Built Flask application using Python that returns the security rating of the specific application tested",
+        "Created custom Docker image to efficiently containerize KnightLight software application",
+        "Demonstrated KnightLight Flask application and Docker tutorial to 70+ company employees and leadership"
       ]
     },
     {
@@ -84,7 +93,7 @@
       "endDate": "Present",
       "summary": "Student led venture fund investing in UH affiliated startups",
       "highlights": [
-        ""
+        "Managing team of 8 to conduct due diligence of startup company applicants to make $5000 investments"
       ]
     }
   ],
@@ -97,7 +106,8 @@
       "endDate": "Present",
       "summary": "Leading committee teams of 5 planning 10+ yearly events with turnouts of 100+ students and faculty",
       "highlights": [
-        ""
+        "Leading committee teams of 5 planning 10+ yearly events with turnouts of 100+ students and faculty",
+        "Hosted Fall 2022 NAESC West Regional Conference" 
       ]
     }
   ],
