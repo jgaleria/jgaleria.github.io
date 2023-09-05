@@ -84,7 +84,9 @@
         "Created custom Docker image to efficiently containerize KnightLight software application",
         "Demonstrated KnightLight Flask application and Docker tutorial to 70+ company employees and leadership"
       ]
-    },
+    }
+  ],
+  "volunteer": [
     {
       "organization": "Calvin Shindo Student Venture Fund",
       "website": "https://pace.shidler.hawaii.edu/venture-fund/",
@@ -95,9 +97,7 @@
       "highlights": [
         "Managing team of 8 to conduct due diligence of startup company applicants to make $5000 investments"
       ]
-    }
-  ],
-  "volunteer": [
+    },
     {
       "organization": "Engineers' Council at the University of Hawai'i",
       "website": "https://ecuh.org/",
