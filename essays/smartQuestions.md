@@ -9,7 +9,7 @@ labels:
   - Stack Overflow
 ---
 
-<img width="200px" class="rounded float-start pe-4" src="../img/logo-stackoverflow-2.jpeg">
+<img width="200px" class="rounded float-start pe-4" src="../img/logo-stackoverflow-2.jpg">
 
 
 ## Essay Takeaways
