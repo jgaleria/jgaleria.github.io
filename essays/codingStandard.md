@@ -3,7 +3,7 @@ layout: essay
 type: essay
 title: "Green Checkmarks"
 # All dates must be YYYY-MM-DD format!
-date: 2023-09-020
+date: 2023-09-20
 published: true
 labels:
   - Coding Standards
