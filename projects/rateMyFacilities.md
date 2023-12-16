@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/rateMyFacilities.png
+image: ../img/rateMyFacilities.png
 title: "Rate My Facilities"
 date: 2023
 published: true
