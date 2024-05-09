@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Design Patterns | Joshua Galeria | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/jgaleria.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Joshua Galeria | Professional Portfolio">
+    <meta property="og:url" content="https://jgaleria.github.io/essays/designPatterns.html">
+    <meta property="og:title" content="Design Patterns | Joshua Galeria | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/jgaleria.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Design Patterns | Joshua Galeria | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Joshua Galeria</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Design Patterns</h1>
+  <span class="date">30 Nov 2023</span>
+  <hr>
+  <p><img width="200px" class="rounded float-start pe-4" src="../img/designPatterns.jpeg" /></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>In the context of software engineering, a design pattern is typically a repeatable solution to a commonly occurring problem in software design. This pattern isn’t something that can just be copy and pasted into your code and expected to work. It’s meant to be flexible for your specific use case. Generally, each pattern follows a set of rules or requirements for it to be applicable. The design pattern serves as a template for how to solve a problem in different situations.</p>
+
+<p>These patterns can speed up the development process through the use of templates. An analogy could be a cookie cutter or a stencil. If you’re baking a cookie or want to draw something in a certain way, you can use the stencil as a starting point. Reusing design patterns can help prevent some issues in the future since the developer would know how their code is structured, aiding in code readability and maintainability.</p>
+
+<h2 id="types-of-design-patterns">Types of Design Patterns</h2>
+
+<p>There are several types of design patterns, including creational, structural, behavioral, architectural, and more.</p>
+
+<h3 id="creational">Creational</h3>
+<p>Creational design patterns focus on object or class creation. These creations address the process of instantiation and ensure that the system can create objects based on the code functionality. An example of a creational pattern is the Singleton pattern, which ensures that a class only has one instance and provides a global point of access to it. The Singleton pattern is useful when a single point of control is required. Another creational pattern is the Factory Method Pattern, which creates an interface for making objects but leaves the object type choice to the subclasses.</p>
+
+<h3 id="structural">Structural</h3>
+
+<p>Structural design patterns simplify classes and objects to form larger and more complex structures. These patterns help developers create more flexible systems for classes to interact with one another. An example of a structural pattern is the Adapter Pattern, which allows incompatible interfaces to work together by creating a wrapper interface. Another example of a structural pattern is the Decorator Pattern, which enables the dynamic attachment of additional responsibilities to objects without altering their code. Overall, this type of design pattern helps with code organization, collaboration, and reusability.</p>
+
+<h3 id="behavioral">Behavioral</h3>
+
+<p>Behavioral design patterns deal with patterns for communication and collaboration between objects to create flexible and efficient systems. An example of a behavioral pattern is the Observer pattern, which establishes a one-to-many dependency between objects. This allows an object to change states, then notify all existing dependents to be updated. Another pattern includes the Command pattern, which encapsulates a request as an object. The behavioral pattern provides developers with a code framework that handles complex interactions and behaviors.</p>
+
+<h2 id="rate-my-facilities">Rate My Facilities</h2>
+
+<p>My team has used many design patterns in the creation of our Rate My Facilities web application. A design pattern in the structure of the application includes container and presentational components. In the project structure, containers are responsible for data fetching and business logic, while presentational components focus on rendering UI elements. An example of the containers being used is in data collection forms when we add a facility or review. The container has a collection of input numbers and string fields that are then used as input for the collections. Some of the UI elements we have are the nav-bar and specific cards and button links for each review. A behavioral pattern we’ve incorporated into the project is conditional rendering. This behavior is employed based on the readiness of data subscriptions, which we denote with the ‘ready’ variable. We have three different collections that use this behavior: facilities, reviews, and buildings. Some other patterns that we use are React hooks, Meteor data integration, schema validation, and more.</p>
+
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
