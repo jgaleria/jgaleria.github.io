@@ -1,13 +1,13 @@
 {
   "basics": {
     "name": "Joshua Galeria",
-    "label": "Student",
+    "label": "Software Engineer II @ Nike",
     "picture": "https://github.com/jgaleria.png",
-    "email": "jgaleria@hawaii.edu",
+    "email": "jgaleriacs@gmail.com",
     "phone": "808-725-7622",
-    "website": "https://jgaleria.github.io",
-    "summary": "I'm pursuing my B.S. in Computer Engineering at the University of Hawaii. I expect to graduate in Spring, 2024. I plan on becoming a Software Engineer in the near future.",
-    "location": { "address": "", "postalCode": "96797", "city": "Waipahu", "countryCode": "USA", "region": "Hawaii" },
+      "website": "https://jgaleria.github.io",
+    "summary": "I'm into volleyball and weightlifting.",
+    "location": { "address": "", "postalCode": "97003", "city": "Beaverton", "countryCode": "USA", "region": "Oregon" },
     "profiles": [
       { "network": "github", "username": "jgaleria", "url": "http://github.com/jgaleria" },
       { "network": "linkedin", "username": "joshua-galeria", "url": "http://linkedin.com/in/joshua-galeria" }
@@ -15,9 +15,8 @@
   },
   "interests": [
     { "name": "Software Engineering" },
-    { "name": "Robotics" },
-    { "name": "Computer Vision" },
-    { "name": "Machine Learning" },
+    { "name": "Artificial Intelligence" },
+    { "name": "Sports" }
 
   ],
   "skills": [
@@ -33,10 +32,10 @@
   "education": [
     {
       "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Engineering (expected Spring, 2024)",
+      "area": "Computer Engineering",
       "studyType": "B.S.",
       "startDate": "2020-08-21",
-      "endDate": "Present",
+      "endDate": "2024-05-15",
       "courses": [
           "Programming for Engineers", "Object Oriented Programming", "Linear Algebra and Machine Learning", "Data Structures and Algorithms", "Database Systems 1", "Object-oriented Software Engineering", "Operating Systems"
       ]

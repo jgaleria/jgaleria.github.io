@@ -4,9 +4,6 @@
       <img src="{{ site.baseurl }}/{{ include.page.image }}" class="rounded-start w-100 h-100" style="object-fit: cover; min-height: 200px;" alt="{{ include.page.title }}">
     </div>
     <div class="col-sm-6 col-md-8">
-      <div class="terminal-card-path">
-        <span class="tilde">~</span>/projects/
-      </div>
       <div class="terminal-card-body">
         <h5 class="terminal-card-title">{{ include.page.title }}</h5>
         <p class="terminal-card-date">{{ include.page.date }}</p>
@@ -17,9 +14,9 @@
           {% endfor %}
         </div>
         {% if page.projecturl %}
-        <a href="{{ page.projecturl }}" class="terminal-btn"><span class="prompt">&gt;</span> project_site</a>
+        <a href="{{ page.projecturl }}" class="terminal-btn">View Project</a>
         {% else %}
-        <a href="{{ site.baseurl}}{{ include.page.url }}" class="terminal-btn"><span class="prompt">&gt;</span> read_more</a>
+        <a href="{{ site.baseurl}}{{ include.page.url }}" class="terminal-btn">Read More</a>
         {% endif %}
       </div>
     </div>

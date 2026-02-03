@@ -39,7 +39,7 @@
     if (!codeThemeLink) return;
 
     const baseurl = codeThemeLink.getAttribute('data-baseurl') || '';
-    const newTheme = theme === THEME_DARK ? 'monokai.css' : 'github.css';
+    const newTheme = theme === THEME_DARK ? 'gruvbox.css' : 'github.css';
     codeThemeLink.href = baseurl + '/css/rouge/' + newTheme;
   }
 

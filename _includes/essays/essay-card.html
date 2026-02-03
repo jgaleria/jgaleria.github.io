@@ -1,8 +1,5 @@
 <div class="col-md-6 col-lg-4">
   <div class="terminal-card h-100">
-    <div class="terminal-card-path">
-      <span class="tilde">~</span>/essays/
-    </div>
     <div class="terminal-card-body">
       <h5 class="terminal-card-title">{{ include.page.title }}</h5>
       <p class="terminal-card-date">{{ include.page.date | date_to_string }}</p>
@@ -15,7 +12,7 @@
     </div>
     <div class="terminal-card-footer" style="padding: 0 1.25rem 1.25rem;">
       <div class="text-center">
-        <a href="{% if page.essayurl %}{{ page.essayurl }}{% else %}{{ site.baseurl}}{{ include.page.url }}{% endif %}" class="terminal-btn"><span class="prompt">&gt;</span> read_more</a>
+        <a href="{% if page.essayurl %}{{ page.essayurl }}{% else %}{{ site.baseurl}}{{ include.page.url }}{% endif %}" class="terminal-btn">Read More</a>
       </div>
     </div>
   </div>

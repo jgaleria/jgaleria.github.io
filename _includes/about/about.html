@@ -31,7 +31,7 @@
 
       <div class="col-lg-8">
         <div class="terminal-whoami">
-          <span class="prompt">$</span> whoami
+          Hey, I'm
         </div>
         <h1 class="terminal-name">{{ site.data.bio.basics.name }}</h1>
         <p class="terminal-label">{{ site.data.bio.basics.label }}</p>
@@ -41,7 +41,7 @@
         </div>
 
         <div class="terminal-interests">
-          <span class="prompt">$</span> cat interests.txt
+          <div class="earthy-interests-label">What I'm into</div>
           <div class="terminal-interests-list">
             {% for interest in site.data.bio.interests %}
             <span class="terminal-interest-item">{{ interest.name }}</span>
