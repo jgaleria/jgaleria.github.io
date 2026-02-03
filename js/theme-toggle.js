@@ -47,21 +47,21 @@
    * Update toggle button icon visibility
    */
   function updateToggleButton(theme) {
-    const toggleBtn = document.querySelector('.theme-toggle');
-    if (!toggleBtn) return;
+    const toggleBtns = document.querySelectorAll('.theme-toggle');
+    toggleBtns.forEach(toggleBtn => {
+      const sunIcon = toggleBtn.querySelector('.sun-icon');
+      const moonIcon = toggleBtn.querySelector('.moon-icon');
 
-    const sunIcon = toggleBtn.querySelector('.sun-icon');
-    const moonIcon = toggleBtn.querySelector('.moon-icon');
-
-    if (sunIcon && moonIcon) {
-      if (theme === THEME_DARK) {
-        sunIcon.style.display = 'block';
-        moonIcon.style.display = 'none';
-      } else {
-        sunIcon.style.display = 'none';
-        moonIcon.style.display = 'block';
+      if (sunIcon && moonIcon) {
+        if (theme === THEME_DARK) {
+          sunIcon.style.display = 'block';
+          moonIcon.style.display = 'none';
+        } else {
+          sunIcon.style.display = 'none';
+          moonIcon.style.display = 'block';
+        }
       }
-    }
+    });
   }
 
   /**
@@ -83,11 +83,11 @@
     const theme = getThemePreference();
     applyTheme(theme);
 
-    // Set up toggle button
-    const toggleBtn = document.querySelector('.theme-toggle');
-    if (toggleBtn) {
-      toggleBtn.addEventListener('click', toggleTheme);
-    }
+    // Set up toggle buttons (mobile and desktop)
+    const toggleBtns = document.querySelectorAll('.theme-toggle');
+    toggleBtns.forEach(btn => {
+      btn.addEventListener('click', toggleTheme);
+    });
 
     // Listen for system preference changes
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');

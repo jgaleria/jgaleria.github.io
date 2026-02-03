@@ -7,23 +7,23 @@
         <div class="terminal-social justify-content-center mt-4">
           {% if site.data.bio.basics.website %}
             {% capture url %}{{ site.data.bio.basics.website }}{% endcapture %}
-            <a href="{{ url }}" class="terminal-social-link" aria-label="Website">
-              {% include about/social.html url=url name='house' %}
+            <a href="{{ url }}" class="terminal-social-link" aria-label="Website" target="_blank" rel="noopener noreferrer">
+              {% include about/social.html name='house' %}
             </a>
           {% endif %}
 
           {% if site.data.bio.basics.email %}
             {% capture url %}mailto:{{ site.data.bio.basics.email }}{% endcapture %}
             <a href="{{ url }}" class="terminal-social-link" aria-label="Email">
-              {% include about/social.html url=url name='envelope' %}
+              {% include about/social.html name='envelope' %}
             </a>
           {% endif %}
 
           {% for profile in site.data.bio.basics.profiles %}
             {% capture url %}{{ profile.url }}{% endcapture %}
             {% capture name %}{{ profile.network | downcase }}{% endcapture %}
-            <a href="{{ url }}" class="terminal-social-link" aria-label="{{ profile.network }}">
-              {% include about/social.html url=url name=name %}
+            <a href="{{ url }}" class="terminal-social-link" aria-label="{{ profile.network }}" target="_blank" rel="noopener noreferrer">
+              {% include about/social.html name=name %}
             </a>
           {% endfor %}
         </div>
