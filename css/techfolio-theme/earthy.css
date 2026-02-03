@@ -707,6 +707,24 @@ a:hover {
   display: none; /* Hide > prompt */
 }
 
+/* Back Button */
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--tf-font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--tf-text-muted);
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  transition: color var(--tf-transition-fast);
+}
+
+.back-button:hover {
+  color: var(--tf-accent-primary);
+}
+
 /* Bootstrap Card overrides */
 .card {
   background-color: var(--tf-card-bg);

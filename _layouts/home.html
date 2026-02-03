@@ -2,5 +2,10 @@
 layout: default
 ---
 {% include header.html %}
+{% unless page.url == "/" or page.url == "/index.html" %}
+<div class="container pt-4">
+  <a href="javascript:history.back()" class="back-button">&larr; Back</a>
+</div>
+{% endunless %}
 {{ content }}
 {% include footer.html %}
