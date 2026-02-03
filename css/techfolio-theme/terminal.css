@@ -1,0 +1,839 @@
+/* Terminal Theme - Tech/Developer aesthetic with light/dark mode support */
+
+/* Import fonts: JetBrains Mono for headings/code, Inter for body */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap");
+
+/* ========================================
+   CSS Custom Properties - Light Mode (Default)
+   ======================================== */
+:root {
+  /* Background colors */
+  --tf-bg-primary: #f8fafc;
+  --tf-bg-secondary: #f1f5f9;
+  --tf-bg-tertiary: #e2e8f0;
+
+  /* Text colors */
+  --tf-text-primary: #0f172a;
+  --tf-text-secondary: #334155;
+  --tf-text-muted: #64748b;
+
+  /* Accent colors */
+  --tf-accent-primary: #0d9488;
+  --tf-accent-secondary: #0891b2;
+  --tf-accent-hover: #0f766e;
+
+  /* Terminal colors */
+  --tf-terminal-bg: #1e293b;
+  --tf-terminal-text: #e2e8f0;
+  --tf-terminal-prompt: #22d3ee;
+  --tf-terminal-border: #0d9488;
+
+  /* Component colors */
+  --tf-card-bg: #ffffff;
+  --tf-card-border: #e2e8f0;
+  --tf-header-bg: #f8fafc;
+  --tf-footer-bg: #f1f5f9;
+
+  /* Legacy variable mappings for compatibility */
+  --tf-pill-bg: #0d9488;
+  --tf-icon-fill: #64748b;
+  --tf-icon-hover: #0d9488;
+  --tf-page-bg-color: var(--tf-bg-primary);
+  --tf-footer-bg-color: var(--tf-footer-bg);
+  --tf-projects-bg-color: var(--tf-bg-secondary);
+
+  /* Typography */
+  --tf-font-heading: 'JetBrains Mono', monospace;
+  --tf-font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --tf-font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Shadows */
+  --tf-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tf-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tf-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  /* Transitions */
+  --tf-transition-fast: 150ms ease;
+  --tf-transition-normal: 250ms ease;
+
+  /* Border radius */
+  --tf-radius-sm: 4px;
+  --tf-radius-md: 8px;
+  --tf-radius-lg: 12px;
+}
+
+/* ========================================
+   Dark Mode Variables
+   ======================================== */
+[data-theme="dark"] {
+  --tf-bg-primary: #0f172a;
+  --tf-bg-secondary: #1e293b;
+  --tf-bg-tertiary: #334155;
+
+  --tf-text-primary: #f1f5f9;
+  --tf-text-secondary: #e2e8f0;
+  --tf-text-muted: #94a3b8;
+
+  --tf-accent-primary: #2dd4bf;
+  --tf-accent-secondary: #22d3ee;
+  --tf-accent-hover: #5eead4;
+
+  --tf-terminal-bg: #0f172a;
+  --tf-terminal-text: #e2e8f0;
+  --tf-terminal-prompt: #22d3ee;
+  --tf-terminal-border: #2dd4bf;
+
+  --tf-card-bg: #1e293b;
+  --tf-card-border: #334155;
+  --tf-header-bg: #0f172a;
+  --tf-footer-bg: #1e293b;
+
+  --tf-pill-bg: #2dd4bf;
+  --tf-icon-fill: #94a3b8;
+  --tf-icon-hover: #2dd4bf;
+  --tf-page-bg-color: var(--tf-bg-primary);
+  --tf-footer-bg-color: var(--tf-footer-bg);
+  --tf-projects-bg-color: var(--tf-bg-secondary);
+
+  --tf-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+  --tf-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  --tf-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+}
+
+/* System preference fallback (when no data-theme is set) */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --tf-bg-primary: #0f172a;
+    --tf-bg-secondary: #1e293b;
+    --tf-bg-tertiary: #334155;
+
+    --tf-text-primary: #f1f5f9;
+    --tf-text-secondary: #e2e8f0;
+    --tf-text-muted: #94a3b8;
+
+    --tf-accent-primary: #2dd4bf;
+    --tf-accent-secondary: #22d3ee;
+    --tf-accent-hover: #5eead4;
+
+    --tf-terminal-bg: #0f172a;
+    --tf-terminal-text: #e2e8f0;
+    --tf-terminal-prompt: #22d3ee;
+    --tf-terminal-border: #2dd4bf;
+
+    --tf-card-bg: #1e293b;
+    --tf-card-border: #334155;
+    --tf-header-bg: #0f172a;
+    --tf-footer-bg: #1e293b;
+
+    --tf-pill-bg: #2dd4bf;
+    --tf-icon-fill: #94a3b8;
+    --tf-icon-hover: #2dd4bf;
+    --tf-page-bg-color: var(--tf-bg-primary);
+    --tf-footer-bg-color: var(--tf-footer-bg);
+    --tf-projects-bg-color: var(--tf-bg-secondary);
+
+    --tf-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+    --tf-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+    --tf-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+  }
+}
+
+/* ========================================
+   Base Styles
+   ======================================== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--tf-font-body);
+  background-color: var(--tf-bg-primary);
+  color: var(--tf-text-secondary);
+  line-height: 1.6;
+  transition: background-color var(--tf-transition-normal), color var(--tf-transition-normal);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--tf-font-heading);
+  color: var(--tf-text-primary);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.display-4 {
+  font-family: var(--tf-font-heading);
+  font-weight: 700;
+  color: var(--tf-text-primary);
+}
+
+a {
+  color: var(--tf-accent-secondary);
+  text-decoration: none;
+  transition: color var(--tf-transition-fast);
+}
+
+a:hover {
+  color: var(--tf-accent-primary);
+}
+
+code, pre, .monospace {
+  font-family: var(--tf-font-mono);
+}
+
+/* ========================================
+   Header Styles
+   ======================================== */
+.terminal-header {
+  background-color: var(--tf-header-bg);
+  border-bottom: 1px solid var(--tf-card-border);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+  transition: background-color var(--tf-transition-normal), border-color var(--tf-transition-normal);
+}
+
+.terminal-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.terminal-brand {
+  font-family: var(--tf-font-mono);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--tf-text-primary);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.terminal-brand:hover {
+  color: var(--tf-accent-primary);
+}
+
+.terminal-prompt {
+  color: var(--tf-terminal-prompt);
+  font-weight: 700;
+}
+
+.terminal-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.terminal-nav-link {
+  font-family: var(--tf-font-mono);
+  font-size: 0.9rem;
+  color: var(--tf-text-secondary);
+  text-decoration: none;
+  transition: color var(--tf-transition-fast);
+  position: relative;
+}
+
+.terminal-nav-link::before {
+  content: './';
+  color: var(--tf-text-muted);
+  opacity: 0.7;
+}
+
+.terminal-nav-link:hover {
+  color: var(--tf-accent-primary);
+}
+
+.terminal-nav-link:hover::before {
+  color: var(--tf-accent-primary);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--tf-card-border);
+  border-radius: var(--tf-radius-md);
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--tf-text-secondary);
+  transition: all var(--tf-transition-fast);
+}
+
+.theme-toggle:hover {
+  border-color: var(--tf-accent-primary);
+  color: var(--tf-accent-primary);
+}
+
+.theme-toggle svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.theme-toggle .sun-icon {
+  display: none;
+}
+
+.theme-toggle .moon-icon {
+  display: block;
+}
+
+[data-theme="dark"] .theme-toggle .sun-icon {
+  display: block;
+}
+
+[data-theme="dark"] .theme-toggle .moon-icon {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .theme-toggle .sun-icon {
+    display: block;
+  }
+  :root:not([data-theme]) .theme-toggle .moon-icon {
+    display: none;
+  }
+}
+
+/* Mobile Navigation */
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: var(--tf-text-secondary);
+}
+
+.mobile-menu-toggle svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .terminal-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--tf-header-bg);
+    border-bottom: 1px solid var(--tf-card-border);
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .terminal-nav.active {
+    display: flex;
+  }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+/* ========================================
+   Hero / About Section
+   ======================================== */
+.terminal-hero {
+  background-color: var(--tf-bg-primary);
+  padding: 4rem 0;
+  transition: background-color var(--tf-transition-normal);
+}
+
+.terminal-whoami {
+  font-family: var(--tf-font-mono);
+  font-size: 0.875rem;
+  color: var(--tf-text-muted);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.terminal-whoami .prompt {
+  color: var(--tf-terminal-prompt);
+}
+
+.terminal-name {
+  font-family: var(--tf-font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--tf-text-primary);
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.terminal-label {
+  font-family: var(--tf-font-mono);
+  font-size: 1.25rem;
+  color: var(--tf-accent-primary);
+  margin-bottom: 1.5rem;
+}
+
+.terminal-output {
+  background-color: var(--tf-terminal-bg);
+  border-left: 3px solid var(--tf-terminal-border);
+  border-radius: var(--tf-radius-md);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  color: var(--tf-terminal-text);
+  font-family: var(--tf-font-body);
+  line-height: 1.7;
+}
+
+.terminal-interests {
+  font-family: var(--tf-font-mono);
+  font-size: 0.875rem;
+  color: var(--tf-text-muted);
+  margin-top: 1.5rem;
+}
+
+.terminal-interests .prompt {
+  color: var(--tf-terminal-prompt);
+}
+
+.terminal-interests-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-top: 0.75rem;
+}
+
+.terminal-interest-item {
+  font-family: var(--tf-font-mono);
+  font-size: 0.9rem;
+  color: var(--tf-text-secondary);
+  position: relative;
+}
+
+.terminal-interest-item:not(:last-child)::after {
+  content: '|';
+  color: var(--tf-text-muted);
+  margin-left: 1rem;
+  opacity: 0.5;
+}
+
+.terminal-profile-image {
+  border-radius: 50%;
+  border: 3px solid var(--tf-accent-primary);
+  box-shadow: var(--tf-shadow-lg);
+  transition: border-color var(--tf-transition-normal), box-shadow var(--tf-transition-normal);
+}
+
+.terminal-profile-image:hover {
+  border-color: var(--tf-accent-secondary);
+}
+
+/* Social Icons */
+.terminal-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.terminal-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--tf-radius-md);
+  background-color: var(--tf-bg-secondary);
+  color: var(--tf-text-secondary);
+  transition: all var(--tf-transition-fast);
+}
+
+.terminal-social-link:hover {
+  background-color: var(--tf-accent-primary);
+  color: white;
+}
+
+.tf-social {
+  display: inline-block;
+  fill: var(--tf-icon-fill);
+  height: 1.5em;
+  vertical-align: -.1em;
+  width: 1.5em;
+  transition: fill var(--tf-transition-fast);
+}
+
+.tf-social:hover {
+  fill: var(--tf-icon-hover);
+}
+
+/* ========================================
+   Card Styles
+   ======================================== */
+.terminal-card {
+  background-color: var(--tf-card-bg);
+  border: 1px solid var(--tf-card-border);
+  border-radius: var(--tf-radius-lg);
+  overflow: hidden;
+  transition: all var(--tf-transition-normal);
+  box-shadow: var(--tf-shadow-sm);
+}
+
+.terminal-card:hover {
+  border-color: var(--tf-accent-primary);
+  box-shadow: var(--tf-shadow-md);
+  transform: translateY(-2px);
+}
+
+.terminal-card-path {
+  font-family: var(--tf-font-mono);
+  font-size: 0.75rem;
+  color: var(--tf-text-muted);
+  padding: 0.75rem 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.terminal-card-path .tilde {
+  color: var(--tf-terminal-prompt);
+}
+
+.terminal-card-header {
+  font-family: var(--tf-font-mono);
+  font-size: 0.8rem;
+  color: var(--tf-text-muted);
+  padding: 0.75rem 1.25rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.terminal-card-header .prompt {
+  color: var(--tf-terminal-prompt);
+}
+
+.terminal-card-body {
+  padding: 1rem 1.25rem 1.25rem;
+}
+
+.terminal-card-text {
+  color: var(--tf-text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.terminal-card-title {
+  font-family: var(--tf-font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--tf-text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.terminal-card-date {
+  font-family: var(--tf-font-mono);
+  font-size: 0.75rem;
+  color: var(--tf-text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.terminal-card-summary {
+  color: var(--tf-text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.terminal-card-labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.terminal-card-footer {
+  padding: 0 1.25rem 1.25rem;
+}
+
+/* Badge / Pill Styles */
+.terminal-badge {
+  display: inline-block;
+  font-family: var(--tf-font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: var(--tf-accent-primary);
+  color: white;
+  padding: 0.25em 0.6em;
+  border-radius: var(--tf-radius-sm);
+}
+
+[data-theme="dark"] .terminal-badge {
+  color: #0f172a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .terminal-badge {
+    color: #0f172a;
+  }
+}
+
+.badge.rounded-pill {
+  background-color: var(--tf-pill-bg) !important;
+  color: white;
+  font-family: var(--tf-font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.35em 0.75em;
+}
+
+[data-theme="dark"] .badge.rounded-pill {
+  color: #0f172a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .badge.rounded-pill {
+    color: #0f172a;
+  }
+}
+
+/* Terminal Button */
+.terminal-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--tf-font-mono);
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--tf-radius-md);
+  background-color: transparent;
+  border: 1px solid var(--tf-accent-primary);
+  color: var(--tf-accent-primary);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--tf-transition-fast);
+}
+
+.terminal-btn:hover {
+  background-color: var(--tf-accent-primary);
+  color: white;
+}
+
+.terminal-btn .prompt {
+  font-weight: 700;
+}
+
+/* Bootstrap Card overrides */
+.card {
+  background-color: var(--tf-card-bg);
+  border: 1px solid var(--tf-card-border);
+  transition: all var(--tf-transition-normal);
+}
+
+.card:hover {
+  border-color: var(--tf-accent-primary);
+  box-shadow: var(--tf-shadow-md);
+}
+
+.card-body {
+  background-color: var(--tf-card-bg);
+}
+
+.card-footer {
+  background-color: var(--tf-card-bg);
+  border-top: 1px solid var(--tf-card-border);
+}
+
+.card-title {
+  font-family: var(--tf-font-heading);
+  color: var(--tf-text-primary);
+}
+
+.card-text {
+  color: var(--tf-text-secondary);
+}
+
+.text-muted {
+  color: var(--tf-text-muted) !important;
+}
+
+/* Button overrides */
+.btn-outline-dark {
+  font-family: var(--tf-font-mono);
+  border-color: var(--tf-accent-primary);
+  color: var(--tf-accent-primary);
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--tf-accent-primary);
+  border-color: var(--tf-accent-primary);
+  color: white;
+}
+
+/* ========================================
+   Section Styles
+   ======================================== */
+.terminal-section {
+  padding: 4rem 0;
+  background-color: var(--tf-bg-primary);
+  transition: background-color var(--tf-transition-normal);
+}
+
+.terminal-section.alt {
+  background-color: var(--tf-bg-secondary);
+}
+
+.terminal-section-header {
+  font-family: var(--tf-font-mono);
+  font-size: 0.875rem;
+  color: var(--tf-text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.terminal-section-header .prompt {
+  color: var(--tf-terminal-prompt);
+}
+
+.terminal-section-title {
+  font-family: var(--tf-font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--tf-text-primary);
+  margin-bottom: 2rem;
+}
+
+/* ========================================
+   Footer Styles
+   ======================================== */
+.terminal-footer {
+  background-color: var(--tf-footer-bg);
+  border-top: 1px solid var(--tf-card-border);
+  padding: 2rem 0;
+  transition: background-color var(--tf-transition-normal), border-color var(--tf-transition-normal);
+}
+
+.terminal-footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.terminal-footer-message {
+  font-family: var(--tf-font-mono);
+  font-size: 0.875rem;
+  color: var(--tf-text-muted);
+}
+
+.terminal-footer-message .prompt {
+  color: var(--tf-terminal-prompt);
+}
+
+.terminal-footer-message a {
+  color: var(--tf-accent-secondary);
+}
+
+.terminal-footer-message a:hover {
+  color: var(--tf-accent-primary);
+}
+
+/* ========================================
+   Resume Page Styles
+   ======================================== */
+.resume-section {
+  margin-bottom: 3rem;
+}
+
+.resume-section h2 {
+  font-family: var(--tf-font-heading);
+  font-size: 1.5rem;
+  color: var(--tf-accent-primary);
+  border-bottom: 2px solid var(--tf-card-border);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ========================================
+   Code Block Styles
+   ======================================== */
+pre {
+  background-color: var(--tf-terminal-bg);
+  border-radius: var(--tf-radius-md);
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+code {
+  font-family: var(--tf-font-mono);
+  font-size: 0.9em;
+}
+
+:not(pre) > code {
+  background-color: var(--tf-bg-tertiary);
+  padding: 0.2em 0.4em;
+  border-radius: var(--tf-radius-sm);
+  color: var(--tf-accent-primary);
+}
+
+/* ========================================
+   Accessibility
+   ======================================== */
+:focus-visible {
+  outline: 2px solid var(--tf-accent-primary);
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ========================================
+   Utility Classes
+   ======================================== */
+.bg-gradient {
+  background-image: none !important;
+}
+
+/* Ensure proper contrast */
+.lead {
+  color: var(--tf-text-secondary);
+}
+
+hr {
+  border-color: var(--tf-card-border);
+  opacity: 1;
+}
+
+/* Fix Bootstrap dark text in dark mode */
+[data-theme="dark"] .text-dark {
+  color: var(--tf-text-primary) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .text-dark {
+    color: var(--tf-text-primary) !important;
+  }
+}

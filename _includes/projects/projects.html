@@ -1,8 +1,11 @@
-<div style="background-color: var(--tf-projects-bg-color)" class="bg-gradient py-3" id="projects">
+<div class="terminal-section alt" id="projects">
   <div class="container">
     <div class="row mb-3">
       <div class="col-md-6">
-        <h1 class="display-4 text-start">Projects</h1>
+        <div class="terminal-section-header">
+          <span class="prompt">$</span> ls ~/projects/
+        </div>
+        <h1 class="terminal-section-title">Projects</h1>
       </div>
     </div>
 
@@ -19,7 +22,7 @@
     </div>
 
     {% if project_pages.size > include.limit %}
-      <p class="text-center pt-4"><a href="{{ site.baseurl}}/projects/">See all {{ project_pages.size }} projects</a></p>
+      <p class="text-center pt-4"><a href="{{ site.baseurl}}/university/projects/" class="terminal-btn"><span class="prompt">&gt;</span> see_all_{{ project_pages.size }}_projects</a></p>
     {% endif %}
 
   </div>

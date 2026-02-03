@@ -1,0 +1,56 @@
+---
+title: University
+layout: home
+---
+
+<div class="terminal-section" id="university">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-12">
+        <div class="terminal-section-header">
+          <span class="prompt">$</span> cd ~/university/
+        </div>
+        <h1 class="terminal-section-title">University Work</h1>
+        <p class="terminal-output">Academic projects and essays from my computer science studies.</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <a href="{{ '/university/projects/' | prepend: site.baseurl }}" class="text-decoration-none">
+          <div class="terminal-card h-100">
+            <div class="terminal-card-header">
+              <span class="prompt">$</span> ls projects/
+            </div>
+            <div class="terminal-card-body">
+              <h2 class="terminal-card-title">Projects</h2>
+              <p class="terminal-card-text">
+                Software engineering projects, from data structures to full-stack applications.
+              </p>
+              {% assign project_count = site.pages | where: "type", "project" | size %}
+              <span class="terminal-badge">{{ project_count }} files</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-6">
+        <a href="{{ '/university/essays/' | prepend: site.baseurl }}" class="text-decoration-none">
+          <div class="terminal-card h-100">
+            <div class="terminal-card-header">
+              <span class="prompt">$</span> ls essays/
+            </div>
+            <div class="terminal-card-body">
+              <h2 class="terminal-card-title">Essays</h2>
+              <p class="terminal-card-text">
+                Reflections on software engineering practices, design patterns, and technology.
+              </p>
+              {% assign essay_count = site.pages | where: "type", "essay" | size %}
+              <span class="terminal-badge">{{ essay_count }} files</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,8 +1,11 @@
-<div style="background-color: var(--bs-white)" class="bg-gradient py-3" id="essays">
+<div class="terminal-section" id="essays">
   <div class="container">
     <div class="row mb-3">
       <div class="col-md-6">
-        <h1 class="display-4 text-start">Essays</h1>
+        <div class="terminal-section-header">
+          <span class="prompt">$</span> ls ~/essays/
+        </div>
+        <h1 class="terminal-section-title">Essays</h1>
       </div>
     </div>
 
@@ -19,7 +22,7 @@
     </div>
 
     {% if essay_pages.size > include.limit %}
-      <p class="text-center pt-4"><a href="{{ site.baseurl}}/essays/">See all {{ essay_pages.size }} essays</a></p>
+      <p class="text-center pt-4"><a href="{{ site.baseurl}}/university/essays/" class="terminal-btn"><span class="prompt">&gt;</span> see_all_{{ essay_pages.size }}_essays</a></p>
     {% endif %}
 
   </div>
